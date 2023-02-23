@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dso-demo-static
+  namespace: dso-demo-static
+  labels:
+    app: dso-demo-static
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dso-demo-static
+  template:
+    metadata:
+      labels:
+        app: dso-demo-static
+    spec:
+      imagePullSecrets:
+        - name: quay-image-pull-secret
+      containers:
+        - name: dso-demo-static
+          image: quay.apps.ocp4-8.infocepo.com/ministere-interieur-demo-projets-dso-clients/app-nginx-static-demo:master
+          imagePullPolicy: Always
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080  # Exposes container port
