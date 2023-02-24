@@ -6,4 +6,3 @@ resources:
 - service.yaml
 - ingress.yaml
 
-namespace: ministere-interieur-prj-plec-static-demo-deploy-dev
