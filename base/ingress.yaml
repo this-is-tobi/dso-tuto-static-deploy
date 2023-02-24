@@ -27,6 +27,5 @@ data:
 kind: Secret
 metadata:
   name: dso-demo-static-tls
-  namespace: dso-demo-static
 type: kubernetes.io/tls
 
