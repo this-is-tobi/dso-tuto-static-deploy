@@ -1,6 +1,6 @@
 - op: replace
   path: /spec/rules/0/host
-  value: my-super-url-de-demo
+  value: my-super-url-de-demo.apps.ocp4-8.infocepo.com
 - op: replace
   path: /spec/tls/0/hosts/0
-  value: my-super-url-de-demo
+  value: my-super-url-de-demo.apps.ocp4-8.infocepo.com
