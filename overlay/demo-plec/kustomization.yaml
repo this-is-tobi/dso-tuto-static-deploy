@@ -4,6 +4,11 @@ kind: Kustomization
 resources:
 - ../../base
 
+images:
+ - name: quay.apps.ocp4-8.infocepo.com/ministere-interieur-prj-plec/app-nginx-static-demo:master
+   newName: quay.apps.ocp4-8.infocepo.com/ministere-interieur-demo-plec/app-nginx-static-demo
+   newTag: master
+
 patches:
   - target:
       kind: Ingress
