@@ -19,7 +19,7 @@ spec:
         - name: quay-image-pull-secret
       containers:
         - name: dso-demo-static
-          image: quay.apps.ocp4-8.infocepo.com/ministere-interieur-prj-plec/app-nginx-static-demo:master
+          image: quay.apps.ocp4-8.infocepo.com/ministere-interieur-demo-2702/app-nginx-static-demo:master
           imagePullPolicy: Always
           resources:
             limits:
