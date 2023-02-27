@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dso-demo-static
-  namespace: dso-demo-static
   labels:
     app: dso-demo-static
 spec:
