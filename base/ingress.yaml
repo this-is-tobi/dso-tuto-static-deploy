@@ -6,10 +6,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - demo-2702.apps.ocp4-8.infocepo.com
+        - demo-0103.apps.ocp4-8.infocepo.com
       secretName: dso-demo-static-tls
   rules:
-    - host: demo-2702.apps.ocp4-8.infocepo.com
+    - host: demo-0103.apps.ocp4-8.infocepo.com
       http:
         paths:
           - path: /
