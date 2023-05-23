@@ -2,24 +2,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dso-demo-static
+  name: tuto-static
   labels:
-    app: dso-demo-static
+    app: tuto-static
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dso-demo-static
+      app: tuto-static
   template:
     metadata:
       labels:
-        app: dso-demo-static
+        app: tuto-static
     spec:
       imagePullSecrets:
-        - name: quay-image-pull-secret
+        - name: registry-pull-secret
       containers:
-        - name: dso-demo-static
-          image: registry.apps.ocp4-8.infocepo.com/mi-dso-tuto-static/app-nginx-static-demo:master
+        - name: tuto-static
+          image: registry.integ.dso.minint.fr/mi-demo/tuto:latest
           imagePullPolicy: Always
           resources:
             limits:

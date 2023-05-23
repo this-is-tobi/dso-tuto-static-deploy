@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dso-demo-static
+  name: tuto-static
 spec:
   selector:
-    app: dso-demo-static
+    app: tuto-static
   ports:
     - port: 8080
       targetPort: 8080
